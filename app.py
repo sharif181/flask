@@ -1,6 +1,6 @@
 import math
-
-from flask import Flask, render_template, request
+import json
+from flask import Flask, render_template, request, jsonify
 from pandas_datareader import data as pdr
 from datetime import datetime
 import yfinance as yf
@@ -40,11 +40,12 @@ def get_data(code, invest):
 @app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == "POST":
-        code = request.form.get('code')
-        value = float(request.form.get('value'))
+        parsed_data = json.loads(request.data)
+        code = parsed_data.get('code')
+        value = float(parsed_data.get('value'))
         context = get_data(code.lower(), value)
-        print(context)
-        return render_template('main.html', context=context)
+        # return render_template('main.html', context=context)
+        return jsonify({'context': context})
     else:
         context = get_data('goog', 50000)
         return render_template('main.html', context=context)
