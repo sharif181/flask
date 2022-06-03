@@ -48,4 +48,4 @@ def index():
         return jsonify({'context': context})
     else:
         context = get_data('goog', 50000)
-        return render_template('main.html', context=context)
+        return render_template('index.html', context=context)

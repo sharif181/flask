@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@font-face {
+    font-family: Futura;
+    src: url(http://www.example.com/wp-content/themes/your-theme/fonts/Futura-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: FuturaBold;
+    src: url(http://www.example.com/wp-content/themes/your-theme/fonts/Futura-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    color: #000000;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-section {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+.baggers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.baggers-logo p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.baggers-header-image {
+    font-size: 23px;
+    padding: 10px 0px 0px 0px;
+    font-weight: 500;
+}
+
+.baggers-header-spain {
+    color: #1db20f;
+    font-size: 35px !important;
+    font-weight: 600;
+}
+
+.baggers-header-img {
+    width: 28px;
+    padding-bottom: 10px;
+}
+
+.baggers-title {
+    font-size: 22px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-title p:nth-last-child(3) {
+    padding: 0px;
+    margin: 40px 0px 0px 0px;
+}
+
+.baggers-btn {
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.baggers-btn button {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 155px;
+}
+
+.baggers-btn button:hover {
+    border: 2px solid #1db20f;
+}
+
+.baggers-investment {
+    padding: 50px 0px;
+    font-size: 22px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-dot-span {
+    background-color: #000000;
+    height: 10rem !important;
+    width: 2rem !important;
+    margin: 0px 0px 0px 20px;
+    padding: 3px 1px;
+}
+
+.baggers-amount-span {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0px 0px 0px 5px;
+}
+
+.baggers-amount-span input {
+    width: 120px;
+    border: none;
+    color: #000000;
+}
+
+.baggers-big-amount-span {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0px 0px 0px 15px;
+    color: #1db20f;
+}
+
+.baggers-focus,
+.baggers-footer {
+    padding: 50px 0px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    /* font-family: "Didact Gothic", sans-serif; */
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.baggers-time {
+    color: #1db20f;
+}
+
+.baggers-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-details-description a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.baggers-details-description a:hover {
+    color: #1db20f;
+}
+
+.baggers-details-description p:nth-last-child(2) {
+    font-size: 22px;
+    width: 54rem;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.baggers-details-description p:nth-last-child(1) {
+    font-size: 17px;
+    color: rgb(173, 173, 173);
+}
+
+.baggers-details-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.baggers-chart-card {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px #888888;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+.baggers-chart-card-header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.baggers-chart-card-header i {
+    padding: 8px;
+    background-color: #02a9f4;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.baggers-chart-card-col-20 {
+    width: 25%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.baggers-chart-card-col-20 p:nth-last-child(3) {
+    font-size: 25px;
+}
+
+.baggers-chart-card-col-20 p:nth-last-child(2) {
+    font-size: 35px;
+}
+
+.baggers-chart-card-col-20 p:nth-last-child(1) {
+    font-size: 25px;
+}
+
+.baggers-chart-card-col-50 {
+    width: 50%;
+    text-align: center;
+}
+
+.baggers-chart-card-col-50 p:nth-last-child(3) {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.baggers-chart-card-col-50 img {
+    width: 90%;
+}
+
+.baggers-chart-card-col-50 p:nth-last-child(1) {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.fa-droplet {
+    font-size: 16px;
+    color: red;
+}
+
+.baggers-chart-card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+/* Responsive Area */
+
+@media (max-width: 1280px) {
+    .baggers-btn button {
+        font-size: 25px;
+        margin: 10px 5px;
+        padding: 5px;
+        width: 120px;
+    }
+    .baggers-details-description p:nth-last-child(2) {
+        font-size: 22px;
+        width: 38rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .baggers-section {
+        width: 90%;
+    }
+    .baggers-logo p {
+        font-size: 25px;
+    }
+    .baggers-header p:nth-last-child(1) {
+        font-size: 18px;
+    }
+    .baggers-header-spain {
+        font-size: 25px !important;
+    }
+    .baggers-header-img {
+        width: 23px;
+    }
+    .baggers-title {
+        font-size: 15px;
+    }
+    .baggers-btn button {
+        font-size: 12px;
+        margin: 5px 5px;
+        padding: 3px;
+        width: 59px;
+    }
+    .baggers-investment {
+        font-size: 15px;
+    }
+    .baggers-amount-span {
+        font-size: 20px;
+    }
+    .baggers-big-amount-span {
+        font-size: 20px;
+    }
+    .baggers-focus,
+    .baggers-footer {
+        font-size: 15px;
+    }
+    .baggers-details {
+        margin: 30px 0px;
+    }
+    .baggers-details-description a {
+        font-size: 20px;
+    }
+    .baggers-details-description p:nth-last-child(2) {
+        font-size: 15px;
+        width: 20rem;
+    }
+    .baggers-details-description p:nth-last-child(1) {
+        font-size: 13px;
+    }
+    .baggers-chart-card {
+        box-shadow: 3px 3px #888888;
+    }
+    .baggers-chart-card-header {
+        font-size: 18px;
+    }
+    .baggers-chart-card-header i {
+        padding: 4px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(3) {
+        font-size: 16px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(2) {
+        font-size: 22px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(1) {
+        font-size: 16px;
+    }
+    .baggers-chart-card-col-50 p:nth-last-child(3) {
+        font-size: 18px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .baggers-chart-card-col-50 img {
+        width: 75%;
+    }
+    .baggers-chart-card-col-50 p:nth-last-child(1) {
+        font-size: 18px;
+    }
+    .fa-droplet {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .baggers-section {
+        width: 90%;
+    }
+    .baggers-logo p {
+        font-size: 18px;
+    }
+    .baggers-header p:nth-last-child(1) {
+        font-size: 14px;
+    }
+    .baggers-header-spain {
+        font-size: 18px !important;
+    }
+    .baggers-header-img {
+        width: 20px;
+    }
+    .baggers-title {
+        font-size: 15px;
+    }
+    .baggers-btn button {
+        font-size: 8px;
+        margin: 5px 3px;
+        padding: 3px;
+        width: 45px;
+    }
+    .baggers-investment {
+        font-size: 15px;
+    }
+    .baggers-amount-span {
+        font-size: 20px;
+    }
+    .baggers-big-amount-span {
+        font-size: 20px;
+    }
+    .baggers-focus,
+    .baggers-footer {
+        font-size: 15px;
+    }
+    .baggers-details {
+        margin: 30px 0px;
+    }
+    .baggers-details-description a {
+        font-size: 20px;
+    }
+    .baggers-details-description p:nth-last-child(2) {
+        font-size: 15px;
+        width: 20rem;
+    }
+    .baggers-details-description p:nth-last-child(1) {
+        font-size: 13px;
+    }
+    .baggers-chart-card {
+        box-shadow: 3px 3px #888888;
+    }
+    .baggers-chart-card-header {
+        font-size: 16px;
+    }
+    .baggers-chart-card-header i {
+        padding: 3px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(3) {
+        font-size: 14px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(2) {
+        font-size: 20px;
+    }
+    .baggers-chart-card-col-20 p:nth-last-child(1) {
+        font-size: 14px;
+    }
+    .baggers-chart-card-col-50 p:nth-last-child(3) {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .baggers-chart-card-col-50 img {
+        width: 75%;
+    }
+    .baggers-chart-card-col-50 p:nth-last-child(1) {
+        font-size: 18px;
+    }
+    .fa-droplet {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- CSS Link -->
+    <!--    <link rel="stylesheet" href="./main.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+
+
+    <!-- Font awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+
+    <!-- Futura Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+        var values = {{ context | tojson }}
+    </script>
+</head>
+
+<body>
+<section class="baggers-section">
+    <header>
+        <div class="baggers-header">
+            <div class="baggers-logo">
+                <p>longterm</p>
+                <p class="baggers-header-spain">baggers</p>
+            </div>
+            <p class="baggers-header-image">by <img src="../static/Images/logo.jpg" alt="#" class="baggers-header-img"/>
+                Antonio Linares</p>
+        </div>
+    </header>
+
+    <div class="baggers-title">
+        <p>Thinking long term is the only way to win consistenly.</p>
+        <p>I have created this simple app to help you get into an optimal wealth generation mindset.</p>
+        <p>Select a ticker below to get started.</p>
+    </div>
+
+
+    <div class="baggers-btn">
+        <button onclick="functionToExecute('spy')">$ Spy</button>
+        <button onclick="functionToExecute('amzn')">$ Amzn</button>
+        <button onclick="functionToExecute('goog')">$ Goog</button>
+        <button onclick="functionToExecute('nflx')">$ Nflx</button>
+        <button onclick="functionToExecute('amd')">$ Amd</button>
+        <button onclick="functionToExecute('nvda')">$ Nvda</button>
+    </div>
+
+
+    <div class="baggers-btn">
+        <button onclick="functionToExecute('tsla')">$ Tsla</button>
+        <button onclick="functionToExecute('appl')">$ Appl</button>
+        <button onclick="functionToExecute('msft')">$ Msft</button>
+        <button onclick="functionToExecute('nke')">$ Nke</button>
+        <button onclick="functionToExecute('stz')">$ STZ</button>
+        <button onclick="functionToExecute('mnst')">$ Mnst</button>
+    </div>
+
+
+    <div class="baggers-investment">
+        <p>An initial investment of
+            <span class="baggers-dot-span">.</span>
+            <span class="baggers-amount-span"><input type="number" id="lname" name="exampleInput" placeholder="$50,000"></span>
+            in Google Inc.</p>
+        <p>would now be with <span class="baggers-big-amount-span">$5,000,000</span></p>
+    </div>
+
+    <div>
+        <canvas id="myChart" style="width:100%;max-width:1200px"></canvas>
+    </div>
+
+
+    <div class="baggers-chart-card">
+        <div class="baggers-chart-card-header">
+            <p>Google Inc.</p>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+
+        <div class="baggers-chart">
+
+        </div>
+
+
+        <div class="baggers-chart-card-footer">
+            <div class="baggers-chart-card-col-20">
+                <p>02/2005</p>
+                <p>$50,000</p>
+                <p>$88/share</p>
+            </div>
+
+
+            <div class="baggers-chart-card-col-50">
+                <p>18 years</p>
+                <img src="../static/Images/arrow.jpg" alt="#"/>
+                <p>4 big <i class="fa-solid fa-droplet"></i>, <span class="baggers-time">10X</span></p>
+            </div>
+
+
+            <div class="baggers-chart-card-col-20">
+                <p>05/2022</p>
+                <p class="baggers-time">$5,000,000</p>
+                <p>$8800/share</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="baggers-focus">
+        <p>If you focus on finding companies with great fundamentals like the above, <span
+                class="baggers-time">time</span> is your friend.</p>
+        <p>Below, some potential long term baggers for you:</p>
+    </div>
+
+    <div class="baggers-details">
+        <div class="baggers-details-description">
+            <a href="#">$AMRS: Like $AAPL 30 Years Ago</a>
+            <p>Note: you may enjoy reading this older post on the key advance in the genomics space in order to better
+                understand the...</p>
+            <p>antoniolinares.substack.com</p>
+        </div>
+
+        <div class="baggers-details-image">
+            <img src="../static/Images/amrs.jpg" alt="#"/>
+        </div>
+    </div>
+
+
+    <div class="baggers-details">
+        <div class="baggers-details-description">
+            <a href="#">Palantir: The Most Important Company in the West</a>
+            <p>Welcome back! Today, I bring you my deep dive on Palantir, a company that I believe has the potential to
+                own the cloud...</p>
+            <p>antoniolinares.substack.com</p>
+        </div>
+
+        <div class="baggers-details-image">
+            <img src="../static/Images/west.jpg" alt="#"/>
+        </div>
+    </div>
+
+
+    <div class="baggers-details">
+        <div class="baggers-details-description">
+            <a href="#">$BB: the Most Undervalued Tech Platform on Earth</a>
+            <p>Summary: $BB's current business is ok priced and has a very cheap implicit call option on what is likely
+                to be one of...</p>
+            <p>antoniolinares.substack.com</p>
+        </div>
+
+        <div class="baggers-details-image">
+            <img src="../static/Images/earth.jpg" alt="#"/>
+        </div>
+    </div>
+
+    <div class="baggers-footer">
+        <p>Note: none of the above is financial advice and is merely intended as educational content.</p>
+    </div>
+</section>
+
+<script>
+    var first = true
+    var investment_value = 50000;
+    var global_code = 'goog'
+    let yValues = values.yvalues;
+    let xValues = values.xvalues;
+
+    var myChart = new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,0,0.1)",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            // scales: {
+            //     yAxes: [{ticks: {min: 6, max: 16}}],
+            // }
+        }
+    });
+
+    function functionToExecute(code) {
+        global_code = code
+        axios.post('/', {'value': investment_value, 'code': code})
+            .then(function (response) {
+                myChart.data.labels.pop();
+                myChart.data.datasets.forEach((dataset) => {
+                    dataset.data.pop();
+                });
+                myChart.update();
+                myChart.data.labels = response.data.context.xvalues
+                myChart.data.datasets[0].data = response.data.context.yvalues
+                myChart.update()
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+    const myInput = document.querySelector('input[name="exampleInput"]');
+    myInput.addEventListener("input", (e) => {
+        if (first) {
+            investment_value = 0;
+            first = false
+        }
+        if (e.data != null) {
+            investment_value = investment_value * 10 + parseInt(e.data)
+        } else {
+            investment_value = investment_value / 10
+        }
+        console.log(investment_value)
+        functionToExecute(global_code)
+    });
+
+</script>
+
+</body>
+
+</html>
